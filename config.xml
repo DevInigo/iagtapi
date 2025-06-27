@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>iagtapi</name>
+	<displayName><![CDATA[Iagt Custom API module]]></displayName>
+	<version><![CDATA[1.7.1]]></version>
+	<description><![CDATA[Enhance the prestashop REST API to add more endpoints]]></description>
+	<author><![CDATA[Iagt]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
