@@ -1,16 +1,58 @@
-# rfmcube-prestashop-customapi
-Extend the Prestashop REST api for Rfmcube. Compatible with Prestashop 1.6.x and above.
+# IAGT API para PrestaShop
 
-## Important:
-- We recommend you to duplicate your live store on a staging/test site and try installation on it in advanced.
-- Back up Prestashop files and the store database.
+Este módulo añade una API REST personalizada a una tienda PrestaShop, permitiendo la integración de funcionalidades avanzadas con aplicaciones externas o frontales personalizados.
 
-## How to install Rfmcube Custom API for Prestashop
+## 🚀 Características
 
-If you don't want to install via composer, you can use this way.
+- 🔐 Autenticación de usuarios vía JWT.
+- 🛍️ Gestión de productos: listados, detalles, carruseles, más vendidos, etc.
+- 🧾 Gestión de pedidos y proceso de checkout.
+- 👥 Gestión de clientes: direcciones, carritos, wishlists.
+- 🏷️ Gestión de marcas y sliders.
+- 🌍 Configuración multidioma (config.xml en varios idiomas).
+- 📦 Preparado para integrarse con servicios como MultiSafepay.
 
-- Download [the latest release here](https://github.com/rfmcube/rfmcube-prestashop-customapi/releases/download/v1.7.1/rfmcubeapi.zip)
-- Go to Modules/Module Manager and upload the zip with the Upload Module button
-- Go to Advanced Parameters/Webservice and edit your webservice api key, in the permission section find 'detailedorders' item and check the options
+## 📁 Estructura de carpetas
 
-## FAQs
+iagtapi/
+├── classes/
+│ ├── service/
+│ │ └── MultiSafepayService.php
+│ └── webservice/
+│ ├── auth/
+│ ├── brands/
+│ ├── company/
+│ ├── customer/
+│ ├── home/
+│ ├── orders/
+│ └── products/
+├── config.php
+├── iagtapi.php
+├── sql/
+├── views/
+└── ...
+
+
+## 🛠️ Instalación
+
+1. Copiar el módulo `iagtapi` en el directorio `/modules` de tu tienda PrestaShop.
+2. Instalar desde el panel de administración de PrestaShop.
+3. Configurar los parámetros necesarios (tokens, rutas, permisos).
+4. Consumir los endpoints desde el frontend o aplicaciones móviles.
+
+## 📌 Requisitos
+
+- PrestaShop 1.7+
+- PHP 7.2 o superior
+
+## 🧪 Tecnologías
+
+- PHP
+- JSON Web Tokens (JWT)
+- Arquitectura RESTful
+- PrestaShop Module System
+
+## 🤝 Autor
+
+Desarrollado por Íñigo Muñoz [LinkedIn](https://www.linkedin.com/in/imjdev/) | [GitHub](https://github.com/DevInigo)
+
